@@ -31,6 +31,12 @@ class Home extends StatelessWidget {
               },
               child: Text('Change Notifier'),
             ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/streams');
+              },
+              child: Text('Streams'),
+            ),
           ],
         ),
       ),

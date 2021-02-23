@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gerencia_de_estado/change_notifier/change_notifier_page.dart';
 import 'package:gerencia_de_estado/home.dart';
 import 'package:gerencia_de_estado/setstate/set_state_page.dart';
+import 'package:gerencia_de_estado/stream/update_name_page.dart';
 import 'package:gerencia_de_estado/value_notifier/value_notifier_page.dart';
 
 void main() {
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/setState': (_) => SetStatePage(), 
         '/value-notifier': (_) => ValueNotifierPage(),
-        '/change-notifier': (_) => ChangeNotifierPage()
+        '/change-notifier': (_) => ChangeNotifierPage(), 
+        '/streams': (_) => UpdateNamePage(),
       },
       home: Home(),
     );
